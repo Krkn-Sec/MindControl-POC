@@ -6,7 +6,7 @@ Abusing RtlRemoteCall to control a victim process into performing local shellcod
 ---
 
 ## Credits
-A big part of this proof-of-concept is the use of the ApiReeKall technique taught in Reenz0h's Sektor7 Institute MalDev Advanced Vol. 1 course. I can't recommend those courses enough!
+A big part of this proof-of-concept is the use of the ApiReeKall technique taught in Reenz0h's [Sektor7 Institute](https://institute.sektor7.net/) MalDev Advanced Vol. 1 course. I can't recommend those courses enough!
 
 ---
 ## Idea

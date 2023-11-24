@@ -181,7 +181,7 @@ size_t DoMindControl(HANDLE hProcess, HANDLE hThread, MindControl mc) {
 	if (WriteProcessMemory(hProcess, mc_arg, &mc, sizeof(MindControl), 0) == 0) {
 		VirtualFreeEx(hProcess, remote_mem, 0, MEM_RELEASE);
 		ResumeThread(hThread);
-		printf("[!] Error writing remote memory (ApiReeKall arg)!\n");
+		printf("[!] Error writing remote memory (MindControl arg)!\n");
 		return -1;		
 	}
 	

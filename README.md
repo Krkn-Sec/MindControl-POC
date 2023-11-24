@@ -29,7 +29,7 @@ RtlRemoteCall (
 The ApiReeKall technique subverts the typical usage of RtlRemoteCall by passing a memory buffer containing a large amount of API calls stored within a struct into the `PULONG_PTR Arguments` argument. Once the RtlRemoteCall executes, the APIs and their corresponding arguments placed in that memory buffer are executed. This allows us to execute multiple APIs with a single RtlRemoteCall.
 
 The APIs I call in this POC is as follows:
- - VirtualAlloc
+ - VirtualAlloc: Create an empty memory buffer that will hold the self-injected shellcode
  - OpenProcess: Using this to open a handle to the original implant process
  - ReadProcessMemory: Instead of injecting the final calc shellcode payload to the process, I wanted to try having the process read the shellcode from my implant's process instead.
  - CreateThread: Executes the calc payload shellcode

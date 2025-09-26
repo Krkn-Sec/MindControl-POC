@@ -16,7 +16,7 @@ After learning how RtlRemoteCall works and how Reenz0h was able to abuse it to p
 
 ## How it works
 
-c```
+```
 RtlRemoteCall (
     HANDLE Process,
     HANDLE Thread,
